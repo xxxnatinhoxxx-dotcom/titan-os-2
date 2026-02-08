@@ -3,7 +3,7 @@ import { UserProfile, WorkoutPlan } from '../types';
 
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
 // Using Gemini 3 Flash as the efficient, high-speed model for workout generation
-const MODEL_NAME = 'gemini-3-flash-preview';
+const MODEL_NAME = 'gemini-1.5-flash';
 
 const SYSTEM_PROMPT = `Você é o Dr. Titan. Identidade: Biomecânico de Elite e Treinador Militar. 
 Tom: Direto, técnico, curto e motivador.
